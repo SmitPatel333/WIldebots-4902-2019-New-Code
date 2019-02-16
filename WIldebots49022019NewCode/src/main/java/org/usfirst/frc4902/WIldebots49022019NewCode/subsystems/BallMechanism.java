@@ -73,6 +73,12 @@ public class BallMechanism extends Subsystem {
 
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
+    public void drive(double speed){
+        ball_Roller.set(speed);
+    }
 
+    public void end(){
+        ball_Roller.set(0);
+    }
 }
 
